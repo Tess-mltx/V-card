@@ -1,0 +1,9 @@
+body{
+    background: #004D63;
+    color: #BCE9FF;
+    display: grid;
+}
+
+header{
+    display: flex;
+}
