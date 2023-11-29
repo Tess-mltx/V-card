@@ -2,6 +2,8 @@ body{
     background: #02222B;
     color: #BCE9FF;
     height: 97vh;
+    width: 90%;
+    margin: auto;
 }
 
 .grid{
@@ -13,18 +15,30 @@ body{
     align-items: center;
     justify-items: center;
 }
+a{
+    text-decoration: none;
+    color: #BCE9FF;
+}
+
+.btn{
+    background-color: #BCE9FF;
+    color: #02222B;
+    padding: 4px 12px 4px 12px;
+    border-radius: 20px;
+}
+
 #i1 {
     grid-column: 1/2;
 }
-#i1::after {
+#i1 a::after {
     content: "";
-    width: 100px;
-    height: 100px;
+    width: 10%;
+    height: 10%;
     background-image: url(LogoInkCode.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    left: 10px;
+    left: 5%;
     top: 5px;
     position: absolute;
 }
@@ -35,6 +49,9 @@ body{
 
 #i3 {
     grid-column: 4/5;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 #i4 {
@@ -43,16 +60,44 @@ body{
 
 #i5 {
     grid-column: 3/5;
-    text-align: center;
+    background: linear-gradient(109deg,transparent 0% 30%, #BCE9FF 30%, #FFD7F6 60%, transparent 60% 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 #pct{
-    width: 40%;
+    width: 60%;
+    max-width: 300px;
 }
 
 #i6 {
     grid-column: 1/2;
+    display: flex;
+    width: 100%;
+}
+#GH, #LI{
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    background-color: #BCE9FF;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    font-weight: bold;
+}
+#GH {
+    background-image: url(github.png);
+}
+#LI {
+    background-image: url(linkedin.png);
 }
 
 #i7 {
     grid-column: 3/5;
+    display: flex;
+    width: 100%;
+    font-size: x-small;
+}
+#i7 p{
+    margin: 4px;
 }
