@@ -69,6 +69,7 @@ a{
 #pct{
     width: 60%;
     max-width: 300px;
+    border-radius: 5px;
 }
 
 #i6 {
